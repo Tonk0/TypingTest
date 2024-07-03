@@ -3,9 +3,10 @@ interface ITextDisplyProps {
   charStyles: string[][]
   currentWordIndex: number
   wordsRef: React.MutableRefObject<HTMLSpanElement[]>
+  charRef: React.MutableRefObject<HTMLSpanElement[][]>
 }
 function TextDisplay({
-  words, charStyles, currentWordIndex, wordsRef,
+  words, charStyles, currentWordIndex, wordsRef, charRef
 } : ITextDisplyProps) {
   return (
     <>
@@ -15,6 +16,7 @@ function TextDisplay({
             <span
               key={charIndex}
               className={charStyles[index][charIndex]}
+              ref={(el: HTMLSpanElement) => { charRef.current[index][charIndex] = el; }}
             >
               {char}
             </span>
