@@ -30,9 +30,9 @@ body{
   flex-wrap: wrap;
   width: 50%;
   color: rgb(138, 138, 138);
-  font-size: 24px;
+  font-size: 32px;
 }
-input{
+input[type="text"]{
   position: absolute;
   opacity: 0;
 }
@@ -45,7 +45,6 @@ input{
 .caret{
   position: absolute;
   width: 1px;
-  height: 20px;
   background-color: white;
   top: 5px;
   animation: 0.5s ease infinite alternate blink;
@@ -58,4 +57,110 @@ input{
   100%{
     opacity: 1;
   }
+}
+
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.676);
+}
+
+.settings_container{
+  padding: 12px 0px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 25%;
+  float: right;
+  background-color: rgb(35,35,35);
+  gap: 20px;
+}
+
+.setting_wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  gap: 8px;
+}
+.setting_info{
+  color: whitesmoke;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.setting_buttons button{
+  background-color: rgb(35,35,35);
+  border: 0.5px solid whitesmoke;
+  width: 50%;
+  color: whitesmoke;
+  font-size: 32px;
+  cursor: pointer;
+}
+.setting_buttons button:active{
+  background-color: rgb(76, 76, 76);
+}
+.setting_checkboxes{
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+input[type="radio"]{
+  flex-shrink: 0;
+  appearance: none;
+  background-color: rgb(35,35,35);
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid rgb(163, 163, 163);
+}
+input[type="radio"]:checked{
+  border: 7px solid white;
+}
+
+.checkbox_label{
+  font-size: 16px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.range_container{
+  display: flex;
+  gap: 16px;
+}
+input[type="range"]{
+  width: 100%;
+  appearance: none;
+  border: 1px solid rgb(66, 66, 66);
+  border-radius: 4px;
+  background-color: rgb(35,35,35);
+  overflow: hidden;
+}
+input[type="range"]::-webkit-slider-thumb{
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  box-shadow: -220px 0px 0px 200px white;
+}
+input[type="range"].mute::-webkit-slider-thumb{
+  width: 0px;
+}
+.button_container{
+  position: absolute;
+  width: 100%;
+  top: -50px;
+}
+.settings_button{
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: #232323;
+  padding: 8px;
+  float: right;
+  color: white;
+  font-size: 16px;
 }

@@ -6,7 +6,7 @@ interface ITextDisplyProps {
   charRef: React.MutableRefObject<HTMLSpanElement[][]>
 }
 function TextDisplay({
-  words, charStyles, currentWordIndex, wordsRef, charRef
+  words, charStyles, currentWordIndex, wordsRef, charRef,
 } : ITextDisplyProps) {
   return (
     <>

@@ -17,6 +17,10 @@ module.exports = {
   plugins: ['react-refresh'],
   rules: {
     'react/react-in-jsx-scope':'off',
+    'jsx-a11y/label-has-associated-control': 'off',
+    'react/no-array-index-key': 'off',
+    'no-param-reassign': 'off',
+    'max-len' : ['error', {'code':150}],
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },

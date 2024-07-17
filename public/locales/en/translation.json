@@ -1,0 +1,15 @@
+{
+  "settings": "Settings",
+  "ru" : "RU",
+  "en" : "EN",
+  "language": "Language",
+  "fontSize": "Font Size",
+  "showTypos": "Show typos",
+  "showOriginal": "Show original",
+  "typos" : {
+    "word" : "Appl",
+    "typo": "r",
+    "original": "e"
+  },
+  "volume" : "Volume"
+}
