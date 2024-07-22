@@ -164,3 +164,16 @@ input[type="range"].mute::-webkit-slider-thumb{
   color: white;
   font-size: 16px;
 }
+.finish_container{
+  margin-top: 12px;
+  width: 100%;
+  color: whitesmoke;
+}
+.finish_container button{
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: whitesmoke;
+  padding: 8px;
+  border-radius: 4px;
+}

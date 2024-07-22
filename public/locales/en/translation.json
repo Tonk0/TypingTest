@@ -11,5 +11,8 @@
     "typo": "r",
     "original": "e"
   },
-  "volume" : "Volume"
+  "volume" : "Volume",
+  "cpm" : "CPM",
+  "mistakes" : "Mistakes",
+  "newText": "New text"
 }
